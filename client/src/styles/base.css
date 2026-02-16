@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --box-color: #E5E4E2;
+    --accent-color: #4169e1;
+    --blur-effect: blur(4px);
+}
+
+.darkmode {
+    --background-color: #000000;
+    --text-color: #ffffff;
+    --box-color: #333333;
+}
+
+body {
+    
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+    
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+

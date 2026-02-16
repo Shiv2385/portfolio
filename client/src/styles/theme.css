@@ -1,0 +1,42 @@
+#theme-switch {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    /* background-color: var(--box-color); */
+    /* background-color: #ffffffa9; */
+    background-color: #4169e1a9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    border: none;
+}
+
+.glow-card {
+    animation: blueGlow 2s infinite alternate;
+}
+
+
+@media (max-width: 350px) {
+    #theme-switch {
+        top: 8px;
+        right: 5px;
+    }
+}
+
+
+@keyframes blueGlow {
+    0% {
+        box-shadow: 0 0 8px rgba(65, 105, 225, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 15px rgba(65, 105, 225, 0.6);
+    }
+
+    100% {
+        box-shadow: 0 0 8px rgba(65, 105, 225, 0.3);
+    }
+}

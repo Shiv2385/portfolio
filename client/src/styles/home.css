@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+
+.home-hero {
+    /* border: 2px solid red; */
+    display: flex;
+    min-height: 84vh;
+}
+
+.home-left {
+    /* border: 2px solid green; */
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-left-box {
+    /* border: 2px solid orange; */
+    min-width: 405px;
+    max-width: 40%;
+    min-height: 80%;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.home-left-box:hover {
+    border-color: #38bdf8;
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.home-left-box h1 {
+    font-size: 2.4rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--accent-color);
+    font-family: 'Grechen Fuemen', cursive;
+}
+
+.home-left-box h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.home-left-box p {
+    font-size: 1.2rem;
+    margin: 40px 15px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.home-buttons Button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.home-buttons Button:hover {
+    background-color: var(--text-color);
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+}
+
+
+
+.home-right {
+    /* border: 2px solid blue; */
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home-right-box {
+    width: 50%;
+    /* border: 2px solid purple; */
+    border-radius: 20px;
+    min-width: 405px;
+}
+
+.home-right-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+@media (max-width: 1124px) {
+    .home-hero {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-left,
+    .home-right {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .home-left-box {
+        min-width: 405px;
+        max-width: 50%;
+    }
+
+    .home-right-box {
+        max-width: 50%;
+        min-width: 380px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .home-hero {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-left,
+    .home-right {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .home-left-box {
+        max-width: 80%;
+        min-width: 280px;
+        height: auto;
+    }
+
+    .home-left-box Button {
+        padding: 8px 8px;
+        font-size: 1rem;
+    }
+
+    .home-left-box h3 span {
+        display: block;
+    }
+
+    .home-left-box h3 .sep {
+        display: none;
+    }
+
+    .home-right-box {
+        max-width: 50%;
+        min-width: 280px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
